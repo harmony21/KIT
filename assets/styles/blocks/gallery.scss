@@ -1,0 +1,35 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    @media screen and (max-width: 760px) {
+        margin-top: 0px;
+    }
+    &__item {
+        width: calc(96%/3);
+        height: 165px;
+        display: block;
+        margin-top: 15px;
+        overflow: hidden;
+        @media screen and (max-width: 760px) {
+            width: calc(98%/2);
+            height: auto;
+        }
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .fancybox {
+        @media screen and (max-width: 470px) {
+            width: calc(98%/2);
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.way-mobile {
+    display: none;
+    @media screen and (max-width: 470px) {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: #000;
+        font-family: Circe-Bold;
+        text-transform: uppercase;
+        span {
+            margin-left: 5px;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.arrow-left, .arrow-right {
+    width: 63px;
+    height: 63px;
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    &:hover {
+        cursor: pointer;
+    }
+    @media screen and (max-width: 760px) {
+        display: none;
+    }
+}
+.arrow-left {
+    background: url('assets/images/arrow-left.png');
+    left: 1%;
+    &.fill {
+        background: url('assets/images/arrow-left-grey.png') no-repeat;
+        @media screen and (max-width: 1230px) {
+            display: none;
+        }
+        &:hover {
+            background-position: 0 -63px;
+        }
+    }
+}
+.arrow-right {
+    background: url('assets/images/arrow-right.png');
+    right: 1%;
+    &.fill {
+        background: url('assets/images/arrow-right-grey.png') no-repeat;
+        @media screen and (max-width: 1230px) {
+            display: none;
+        }
+        &:hover {
+            background-position: 0 -63px;
+        }
+    }
+}

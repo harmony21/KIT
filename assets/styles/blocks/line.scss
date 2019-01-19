@@ -1,0 +1,21 @@
+#line-home, #line-mk {
+    width: 100%;
+}
+.noUi-horizontal {
+    .noUi-handle {
+        width: 22px;
+    }
+}
+.noUi-handle {
+    background: #1253c0;
+    box-shadow: none;
+    border-radius: 20px;
+    &:before {
+        left: 7px;
+        width: 2px;
+    }
+    &:after{
+        left: 11px;
+        width: 2px;
+    }
+}

@@ -1,0 +1,24 @@
+.footer {
+    background-color: #282828;
+    @media screen and (max-width: 1230px) {
+        padding-bottom: 50px;
+    }
+    @media screen and (max-width: 760px) {
+        padding-bottom: 0;
+    }
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width: 760px) {
+            flex-direction: column;
+        }
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 760px) {
+            flex-direction: column;
+        }
+    }
+}

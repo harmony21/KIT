@@ -1,0 +1,40 @@
+.btn {
+    padding: 8px 15px;
+    color: #1253c0;
+    border: 2px solid #1253c0;
+    margin-left: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    &.inside {
+        @media screen and (max-width: 760px) {
+            background-color: #05327e;
+            &:hover {
+                background-color: darken(#05327e, 5);
+            }
+        }
+    }
+    &:hover {
+        cursor: pointer;
+        color: #fff;
+        background-color: #1253c0;
+    }
+    @media screen and (max-width: 760px) {
+        position: absolute;
+        background-color: rgba(0,0,0,0.7);
+        border-radius: 0;
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+        top: 81px;
+        z-index: 20;
+        border: none;
+        color: #fff;
+        text-align: center;
+        &:hover {
+            background-color: #000;
+        }
+        @media screen and (max-width: 470px) {
+            top: 101px;
+        }
+    }
+}

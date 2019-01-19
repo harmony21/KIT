@@ -1,0 +1,8 @@
+.map {
+    margin-top: 45px;
+    position: relative;
+    display: flex;
+    @media screen and (max-width: 760px) {
+        margin-top: 20px;
+    }
+}

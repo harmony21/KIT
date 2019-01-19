@@ -1,0 +1,166 @@
+.menu {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    margin: -40px 376px 0 376px;
+    width: 60%;
+    z-index: 10;
+    &.scrolled {
+        position: fixed;
+        top: 0;
+        margin-top: -16px;
+        z-index: 20;
+    }
+    @media screen and (max-width: 1840px) {
+        margin: -40px 140px 0 140px;
+        width: 84%;
+    }
+    @media screen and (max-width: 1366px) {
+        margin: -40px 100px 0 100px;
+        width: 85%;
+    }
+    @media screen and (max-width: 1230px) {
+        margin: -55px 10px 0 10px;
+        width: 98%;
+    }
+    @media screen and (max-width: 850px) {
+        margin: -55px 0 0 0;
+        width: 100%;
+    }
+    @media screen and (max-width: 760px) {
+        display: none;
+    }
+    &__list {
+        list-style: none;
+        padding-left: 0;
+        background-color: #1253c0;
+        display: flex;
+        width: 100%;
+    }
+    &__item {
+        font-size: 14px;
+        display: flex;
+        width: calc(100%/8);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        &:hover, &.active {
+            background-color: #10397b;
+            .menu__hide-list {
+                display: block;
+            }
+        }
+    }
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        width: 100%;
+        padding: 15px 0;
+        display: block;
+        &.points {
+            width: 27px;
+            height: 4px;
+            background: url('assets/images/points.png') center center no-repeat;
+            border-right: none;
+        }
+    }
+    &__title {
+        width: 100%;
+        display: block;
+        border-right: 2px solid #fff;
+        &.border-none {
+            border-right: none;
+        }
+    }
+    &__hide-list {
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 100%;
+        padding-left: 0;
+        left: 0;
+        top: 100%;
+        text-align: left;
+        background-color: rgba(16,57,123,0.85); 
+        &.nontransparent {
+            background-color: #1253c0;
+            .menu__hide-link {
+                font-size: 14px;
+            }
+        }
+        @media screen and (max-width: 1230px) {
+            width: 130%;
+        }
+        @media screen and (max-width: 850px) {
+            width: 150%;
+        }
+    }
+    &__hide-item {
+        padding: 0 5px;
+        &:hover {
+            background-color: rgba(11,39,85,0.66);
+        }
+    }
+    &__hide-link {
+        font-size: 13px;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+    }
+
+
+    &--footer {
+        position: relative;
+        padding: 0;
+        background-color: transparent;
+        padding-bottom: 10px;
+        width: auto;
+        margin: 0;
+        list-style: none;
+        @media screen and (max-width: 760px) {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 0;
+            margin-top: 20px;
+        }
+        .menu__link {
+            padding: 0 15px;
+            border-right: 2px solid #fff;
+            &.border-none {
+                border-right: none;
+            }
+            &:hover {
+                background-color: transparent;
+            }
+            @media screen and (max-width: 760px) {
+                border-right: none;
+            }
+        }
+        .menu__item {
+            width: auto;
+            &:hover {
+                background-color: transparent;
+                .menu__hide-list {
+                    display: flex;
+                    @media screen and (max-width: 760px) {
+                        display: none;
+                    }
+                }
+            }
+            @media screen and (max-width: 760px) {
+                padding: 5px 0;
+            }
+        }
+        .menu__hide-list {
+            background-color: transparent;
+            display: none;
+        }
+        .menu__hide-item {
+            background-color: transparent;
+        }
+    }
+}

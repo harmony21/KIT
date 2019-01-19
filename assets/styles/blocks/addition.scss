@@ -1,0 +1,14 @@
+.addition {
+    background-color: #e8e8e8;
+    padding-top: 40px;
+    position: relative;
+    @media screen and (max-width: 470px) {
+        padding-top: 20px;
+        background-color: #fff;
+    }
+    &.mobile-hidden {
+        @media screen and (max-width: 470px) {
+            display: none;
+        }
+    }
+}

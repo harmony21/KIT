@@ -1,0 +1,11 @@
+.about {
+    background-color: #e8e8e8;
+    p {
+        @media screen and (max-width: 760px) {
+            font-size: 14px;
+        }
+        @media screen and (max-width: 500px) {
+            font-size: 10px;
+        }
+    }
+}

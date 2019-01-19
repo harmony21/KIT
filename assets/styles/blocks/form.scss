@@ -1,0 +1,134 @@
+.form {
+    position: fixed;
+    z-index: 40;
+    top: 50px;
+    background-color: #fff;
+    width: 554px;
+    padding: 40px 20px;
+    left: 50%;
+    margin-left: -277px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    @media screen and (max-width: 660px) {
+        width: 97%;
+        left: 0;
+        margin-left: 0;
+        padding: 40px 10px;
+    }
+    @media screen and (max-width: 450px) {
+        width: 94%;
+    }
+    &__title {
+        text-transform: uppercase;
+        font-size: 24px;
+        margin: 0;
+        text-align: center;
+        @media screen and (max-width: 760px) {
+            font-size: 18px;
+        }
+    }
+    .logo {
+        text-align: center;
+    }
+}
+#form-feedback {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    input, textarea {
+        padding: 8px 10px;
+        margin-top: 10px;
+        border: 2px solid #f4f4f4;
+        font-family: 'Circe';
+    }
+    textarea {
+        background-color: #f4f4f4;
+        height: 145px;
+        resize: none;
+        @media screen and (max-width: 1366px) {
+            height: 80px;
+        }
+    }
+}
+.form-checkbox {
+    margin-top: 20px;
+    text-align: center;
+    &.fomr-checkbox--calculator {
+        margin-top: 0;
+    }
+}
+.checkbox {
+	display: none;
+}
+.checkbox-custom {
+	position: relative;
+	width: 22px;             
+	height: 22px;            
+    background: url("assets/images/check0.png") no-repeat;
+    cursor: pointer;
+    &.calc {
+        width: 23px;
+        height: 24px;
+        background: url("assets/images/radio0.png") no-repeat;
+    }
+}
+.checkbox-custom, .label {
+	display: inline-block;
+	vertical-align: middle;
+}
+.checkbox:checked + .checkbox-custom::before {
+	content: "";             
+	display: block;			 
+	position: absolute;      
+	top: 0px; 
+	right: 2px; 
+	bottom: 2px; 
+	left: 0px; 
+    background: url("assets/images/check1.png") no-repeat;
+}
+.label {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    @media screen and (max-width: 400px) {
+        width: 70%;
+    }
+    &.calc {
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 16px;
+    }
+}
+.form-btn {
+    margin-top: 20px;
+    border: none;
+    background-color: #fd0e00;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px;
+    width: 40%;
+    align-self: center;
+    &:hover {
+        cursor: pointer;
+        background-color: #ca1616;
+    }
+    &.calc {
+        margin-left: 20px;
+        width: 28%;
+    }
+}
+.form-close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    width: 10px;
+    &:hover {
+        cursor: pointer;
+    }
+    @media screen and (max-width: 760px) {
+        top: 25px;
+        right: 35px;
+    }
+}

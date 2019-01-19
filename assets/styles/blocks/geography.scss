@@ -1,0 +1,32 @@
+.geography {
+    padding: 40px 0 30px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width: 760px) {
+        padding: 10px 0 30px 0;
+    }
+    &.in-gallery {
+        padding-bottom: 0;
+    }
+    &__link {
+        position: absolute;
+        margin-left: 376px;
+        background-color: #1253c0;
+        color: #fff;
+        text-decoration: none;
+        width: 256px;
+        padding: 10px 0;
+        bottom: -20px;
+        text-align: center;
+        &:hover {
+            background-color: darken(#1253c0, 5);
+        }
+        @media screen and (max-width: 1366px) {
+            margin-left: 100px;
+        }
+        @media screen and (max-width: 760px) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.search {
+    width:70px;
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1253c0;
+    //для IE
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        height: 50px;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: #10397b;
+    }
+    &__input {
+        display: none;
+    }
+    &__close {
+        display: none;
+    }
+    &.active {
+        position: absolute;
+        display: flex;
+        width: 96.5%;
+        justify-content: flex-start;
+        padding: 0 20px;
+        background-color: #10397b;
+        @media screen and (max-width: 1840px) {
+            width: 97.2%;
+        }
+        .search__input {
+            display: block;
+            margin-left: 20px;
+            border: none;
+            background-color: transparent;
+            width: 100%;
+            color: #fff;
+            font-family: 'Circe';
+        }
+        .search__close {
+            display: block;
+        }
+        ::-webkit-input-placeholder {
+            color: #fff;
+            font-style: italic;
+            font-family: 'Circe';
+        }
+        :-moz-placeholder {
+            color: #fff;
+            font-style: italic;
+            opacity: 1;
+            font-family: 'Circe';
+        }
+        :-ms-input-placeholder {
+            color: #fff;
+            font-style: italic;
+            font-family: 'Circe';
+        }
+        ::-moz-placeholder {
+            color: #fff;
+            font-style: italic;
+            opacity: 1;
+            font-family: 'Circe';
+        }
+    }
+}
+//отображение поиска в FF
+@-moz-document url-prefix() {
+    .search {
+        height: 50px;
+    }
+}
+//отображение поиска в Microsoft Edge
+_:-ms-lang(x), .search { height: 50px; } 

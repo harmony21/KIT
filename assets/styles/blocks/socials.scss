@@ -1,0 +1,42 @@
+.socials {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    &__text {
+        color: #c1c1c1;
+        font-size: 14px;
+        @media screen and (max-width: 470px) {
+            font-size: 12px;
+        }
+    }
+    &__icon {
+        width: 27px;
+        height: 26px;
+        margin-left: 8px;
+        &.insta {
+            width: 26px;
+            background: url('assets/images/insta.png') no-repeat;
+            &:hover {
+                background-position: 0 -26px;
+            }
+        }
+        &.fb {
+            background: url('assets/images/fb.png') no-repeat;
+            &:hover {
+                background-position: 0 -26px;
+            }
+        }
+        &.twitter {
+            background: url('assets/images/twitter.png') no-repeat;
+            &:hover {
+                background-position: 0 -26px;
+            }
+        }
+        &.viber {
+            background: url('assets/images/viber.png') no-repeat;
+            &:hover {
+                background-position: 0 -26px;
+            }
+        }
+    }
+}

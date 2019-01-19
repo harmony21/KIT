@@ -1,0 +1,31 @@
+.logo {
+    &__img {
+        @media screen and (max-width: 1230px) {
+          width: 200px;
+        }
+    }
+    @media screen and (max-width: 760px) {
+        display: none;
+    }
+    &.mobile {
+        display: none;
+        @media screen and (max-width: 760px) {
+            display: block;
+            .logo__img {
+                width: 100px;
+                margin-left: 20px;
+            }
+        }
+        @media screen and (max-width: 470px) {
+            .logo__img {
+                margin-left: 0;
+                width: 153px;
+            }
+        }
+    }
+    &--footer {
+        @media screen and (max-width: 760px) {
+            display: block;
+        }
+    }
+}
