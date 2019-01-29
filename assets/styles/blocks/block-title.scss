@@ -1,9 +1,9 @@
 .block-title {
     text-align: center;
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 26px;
     margin: 0;
-    font-family: Circe-Bold;
+    font-family: Circe-ExtraBold;
     &.inside {
         text-align: left;
         @media screen and (max-width: 760px) {
@@ -40,9 +40,7 @@
         }
     }
     @media screen and (max-width: 760px) {
-        text-align: left;
-        font-size: 16px;
-        padding-left: 10px;
+        font-size: 18px;
     }
     @media screen and (max-width: 320px) {
         font-size: 16px;
@@ -52,7 +50,7 @@
 .block-subtitle {
     text-transform: uppercase;
     font-size: 18px;
-    font-family: Circe-Bold;
+    font-family: Circe-ExtraBold;
     @media screen and (max-width: 470px) {
         font-size: 14px;
     }

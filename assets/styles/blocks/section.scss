@@ -44,7 +44,7 @@
     }
     &__title {
         margin: 0;
-        font-family: Circe-Bold;
+        font-family: Circe-ExtraBold;
         text-transform: uppercase;
         margin: 5px 0;
         width: 70%;
@@ -123,7 +123,7 @@
         margin: 0;
     }
     &__title {
-        font-family: 'Circe-Bold';
+        font-family: Circe-ExtraBold;
         font-size: 60px;
         text-transform: uppercase;
         @media screen and (max-width: 760px) {
@@ -136,7 +136,7 @@
             font-size: 22px;
         }
         span {
-            font-family: 'Circe-Bold';
+            font-family: Circe-ExtraBold;
         }
     }
     &__notice {

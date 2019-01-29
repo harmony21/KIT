@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/jquery.fancybox.min.css">
     <link rel="stylesheet" href="template_styles.css">
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -255,9 +256,7 @@
         <section class="geography in-gallery">
             <h2 class="block-title">География выполненных работ</h2>
             <div class="calculator-icon"></div>
-            <div class="map"> 
-                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad94f49cff11418f4be1feb17eb223b601fc973d975705f71d1e0253b8f1d09dd&amp;width=100%25&amp;height=561&amp;lang=ru_RU&amp;scroll=false"></script>
-            </div>
+            <div class="map" id="map"></div>
         </section>
       <!--Footer-->
       <footer class="footer">
@@ -290,6 +289,9 @@
             <li class="menu__item"><a class="menu__link" href="reviews.html">Отзывы о нас</a></li>
             <li class="menu__item"><a class="menu__link border-none" href="contacts.html">Контакты</a></li>
           </ul>
+          <div class="footer__creator">
+            Сайт сделан в <a href="https://r-pl.ru/" target="_blank">Решениях</a>
+          </div>
         </div>
       </footer>
       <div class="calculator-icon"></div>
@@ -309,11 +311,6 @@
                 <div class="calc-section">
                   <label>
                     <input class="checkbox" type="radio" name="category" id="formorder-category1" value="Каменный дом" required="required"><span class="checkbox-custom"></span><span class="label">Каменный дом</span>
-                  </label>
-                </div>
-                <div class="calc-section">
-                  <label>
-                    <input class="checkbox" type="radio" name="category" id="formorder-category2" value="Деревянный дом" required="required"><span class="checkbox-custom"></span><span class="label">Деревянный дом</span>
                   </label>
                 </div>
               </div>
@@ -353,41 +350,6 @@
                   <div class="calc-section">
                     <label>
                       <input class="checkbox" type="radio" name="wall-width" id="formorder-wall-width3" value="640 мм" required="required"><span class="checkbox-custom"></span><span class="label">640 мм</span>
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="calculator__block">
-              <div class="steny-wood">
-                <div class="calculator__inside-block">
-                  <p class="calculator__name">Стены</p>
-                  <div class="calc-section">
-                    <label>
-                      <input class="checkbox" type="radio" name="steny" id="formorder-steny4" value="Брус" required="required"><span class="checkbox-custom"></span><span class="label">Брус</span>
-                    </label>
-                  </div>
-                  <div class="calc-section">
-                    <label>
-                      <input class="checkbox" type="radio" name="steny" id="formorder-steny5" value="Оцилиндрованное бревно" required="required"><span class="checkbox-custom"></span><span class="label">Оцилиндрованное бревно</span>
-                    </label>
-                  </div>
-                </div>
-                <div class="calculator__inside-block">
-                  <p class="calculator__name">Диаметр/толщина бруса</p>
-                  <div class="calc-section">
-                    <label>
-                      <input class="checkbox" type="radio" name="diameter" id="formorder-diameter1" value="15 см" required="required"><span class="checkbox-custom"></span><span class="label">15 см</span>
-                    </label>
-                  </div>
-                  <div class="calc-section">
-                    <label>
-                      <input class="checkbox" type="radio" name="diameter" id="formorder-diameter2" value="18 см" required="required"><span class="checkbox-custom"></span><span class="label">18 см</span>
-                    </label>
-                  </div>
-                  <div class="calc-section">
-                    <label>
-                      <input class="checkbox" type="radio" name="diameter" id="formorder-diameter3" value="20 см" required="required"><span class="checkbox-custom"></span><span class="label">20 см</span>
                     </label>
                   </div>
                 </div>
@@ -579,11 +541,10 @@
           <div class="logo mobile"><a href="index.html"><img class="logo__img" src="assets/images/logo-footer.png" alt=""></a></div>
         </div>
         <ul class="mobile-menu__list">
-          <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--form" href="">Заказать звонок</a></li>
           <li class="mobile-menu__item"><a class="mobile-menu__link" href="index.html">Главная</a></li>
           <li class="mobile-menu__item"><a class="mobile-menu__link" href="services.html">Наши услуги</a></li>
-          <li class="mobile-menu__item"><a class="mobile-menu__link" href="price.html">Наши цены</a></li>
-          <li class="mobile-menu__item"><a class="mobile-menu__link mobile-menu__link--calculator" href="">Калькулятор</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link" href="prices.html">Наши цены</a></li>
+          <li class="mobile-menu__item"><a class="mobile-menu__link menu__link--calculator" href="">Калькулятор</a></li>
           <li class="mobile-menu__item"><a class="mobile-menu__link" href="gallery-general.html">Галерея</a></li>
           <li class="mobile-menu__item"><a class="mobile-menu__link" href="reviews.html">Отзывы о нас</a></li>
           <li class="mobile-menu__item"><a class="mobile-menu__link" href="contacts.html">Контакты</a></li>
@@ -599,5 +560,6 @@
 
     <script type="text/javascript" src="assets/scripts/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="assets/scripts/modal-window.js"></script>
+    <script type="text/javascript" src="assets/scripts/map.js"></script>
   </body>
 </html>

@@ -16,18 +16,12 @@ $(document).ready(function () {
 
     $('input[name="category"]').click(function () {
 
-        $('.steny-stone, .steny-wood').hide();
-        $('.steny-stone input, .steny-wood  input').prop('checked', false).removeAttr('required');
+        $('.steny-stone').hide();
+        $('.steny-stone input').prop('checked', false).removeAttr('required');
 
         if ($('#formorder-category1').is(':checked')) {
             $('.steny-stone').css('display', 'flex');
             $('.steny-stone input').attr('required', 'required');
-        }
-
-        if ($('#formorder-category2').is(':checked')) {
-            $('.steny-wood').css('display', 'flex');
-
-            $('.steny-wood input').attr('required', 'required');
         }
     });
 });

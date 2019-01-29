@@ -17,13 +17,12 @@
     }
     &__phone {
         font-size: 22px;
-        font-weight: bold;
+        font-family: Circe-ExtraBold;
         @media screen and (max-width: 1230px) {
             font-size: 18px;
         }
         @media screen and (max-width: 760px) {
             color: #fff;
-            font-size: 16px;
         }
     }
     &__mail {

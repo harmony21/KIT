@@ -20,7 +20,7 @@
         width: 85%;
     }
     @media screen and (max-width: 1230px) {
-        margin: -55px 10px 0 10px;
+        margin: -50px 10px 0 10px;
         width: 98%;
     }
     @media screen and (max-width: 850px) {
@@ -50,6 +50,9 @@
             .menu__hide-list {
                 display: block;
             }
+        }
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
         }
     }
     &__link {

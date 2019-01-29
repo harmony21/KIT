@@ -9,6 +9,11 @@
     &.in-gallery {
         padding-bottom: 0;
     }
+    &.mobile-hidden {
+        @media screen and (max-width: 470px) {
+            display: none;
+        }
+    }
     &__link {
         position: absolute;
         margin-left: 376px;

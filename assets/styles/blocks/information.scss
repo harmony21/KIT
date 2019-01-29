@@ -23,7 +23,7 @@
                     &.blue {
                         background-color: #1253c0;
                         color: #fff;
-                        font-family: 'Circe-Bold';
+                        font-family: Circe-ExtraBold;
                     }
                 }
             }
@@ -40,7 +40,7 @@
                 &:first-child {
                     color: #1253c0;
                     text-align: center;
-                    font-family: 'Circe-Bold';
+                    font-family: Circe-ExtraBold;
                 }
                 &:last-child {
                     outline: none;
@@ -49,7 +49,7 @@
                 &.title {
                     border: none;
                     text-transform: uppercase;
-                    font-family: 'Circe-Bold';
+                    font-family: Circe-ExtraBold;
                     text-align: center;
                     color: #000;
                 }
@@ -63,7 +63,7 @@
                 &.red {
                     color: #fff;
                     background-color: #ba0b0b;
-                    font-family: 'Circe-Bold';
+                    font-family: Circe-ExtraBold;
                 }
             }
         }
@@ -184,7 +184,7 @@
             font-size: 10px;
         }
         &.bold {
-            font-family: Circe-Bold;
+            font-family: Circe-ExtraBold;
         }
     }
 }
@@ -268,7 +268,7 @@
             text-align: center;
             color: #909090;
             font-size: 16px;
-            font-family: Circe-Bold;
+            font-family: Circe-ExtraBold;
             border: 2px solid #e8e8e8;
             &:last-child {
                 outline: none;

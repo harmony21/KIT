@@ -21,4 +21,12 @@
             flex-direction: column;
         }
     }
+    &__creator {
+        text-align: right;
+        color: #e8e8e8;
+        font-size: 12px;
+        a {
+            color: #e8e8e8;
+        }
+    }
 }

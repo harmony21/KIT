@@ -1,4 +1,7 @@
 .result {
+    @media screen and (max-width: 470px) {
+        display: none;
+    }
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
